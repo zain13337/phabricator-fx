@@ -1140,6 +1140,7 @@ final class DifferentialRevision extends DifferentialDAO
       'status' => $status_info,
       'repositoryPHID' => $this->getRepositoryPHID(),
       'diffPHID' => $this->getActiveDiffPHID(),
+      'diffID' => $this->loadActiveDiff()->getID(),
       'summary' => $this->getSummary(),
       'testPlan' => $this->getTestPlan(),
       'isDraft' => !$this->getShouldBroadcast(),
